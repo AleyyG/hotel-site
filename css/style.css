@@ -43,7 +43,7 @@ img{
 }
 
 /* header start*/
-#header{
+.main-header{
     background: url('../img/bg-1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +51,13 @@ img{
     height: 100vh;
     color: var(--white);
     position: relative;
+}
+
+.main-header.blogs{
+    background: url('../img/bg-2.jpeg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
 }
 #header::before{
     content: '';
@@ -137,6 +144,25 @@ img{
     color: var(--white);
 }
 /* abouts end */
+/* blogs start */
+.articles .article{
+    padding: 2rem 4rem;
+    margin: 2rem 0;
+}
+.article.flex-columns .row .column-1 img{
+    height: 100%;
+    width: 100%;
+}
+.article.flex-columns .row .column-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-left: 2rem;
+    color: var(--white);
+} 
+/* blogs end */
 /*gallery start*/
 .flex-grid .row .column img{
     margin-bottom: 2rem;

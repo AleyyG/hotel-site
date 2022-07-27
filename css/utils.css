@@ -134,10 +134,19 @@
     flex: 1;
 }
 
+.flex-columns.article .column:nth-child(odd){
+    flex: 2;
+}
+.flex-columns.article .column:nth-child(even){
+    flex:3;
+
+}
+
 .flex-columns .row .column-1,
 .flex-columns .row .column-2{
     height: 100%;
 }
+
 /* section-header */
 .section-header{
     display: flex;
@@ -179,7 +188,7 @@
         flex-direction: column;
     }
     .flex-columns .column{
-        flex: 100%;
+        flex: 100% !important;
     }
     
     .flex-columns.flex-reverse .row{
